@@ -21,7 +21,7 @@ const ProfileCard = () => {
         <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
           <h3 className="font-bold mb-2">Current Roles</h3>
           <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200">
-            <li>Outlier AI | Freelancer -- Nielsen | Data Co-Ordinator</li>
+            <li>Nielsen | Data Co-Ordinator |--| Outlier AI | Freelancer</li>
           </ul>
         </div>
   
