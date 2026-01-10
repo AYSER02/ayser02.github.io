@@ -31,39 +31,24 @@ const GeminiChat: React.FC = () => {
 
   // ... keep existing fetchGeminiResponse ...
   const fetchGeminiResponse = async (userMessage: string): Promise<string> => {
-    const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
-    if (!API_KEY) {
-      throw new Error('Gemini API key not found');
-    }
-
     try {
-      const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            contents: [{
-              parts: [{
-                text: userMessage
-              }]
-            }]
-          }),
-        }
-      );
+      const res = await fetch('/api/gemini', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userMessage }),
+      });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error?.message || 'Failed to get response from Gemini');
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error || 'Failed to fetch from server');
       }
 
-      const data = await response.json();
-      return data.candidates[0].content.parts[0].text;
-    } catch (error) {
-      console.error('Error calling Gemini API:', error);
-      throw error;
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      return data.text || '';
+    } catch (e) {
+      console.error('Proxy Gemini error:', e);
+      throw e;
     }
   };
 
