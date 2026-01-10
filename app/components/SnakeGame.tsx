@@ -33,7 +33,7 @@ export default function SnakeGame() {
 
   const placeFood = () => {
     // avoid placing food on the snake
-    let x, y;
+    let x: number, y: number;
     do {
       x = Math.floor(Math.random() * tileCount);
       y = Math.floor(Math.random() * tileCount);
