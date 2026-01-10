@@ -9,6 +9,7 @@ import ApplePreloader from "./components/ApplePreloader";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import GeminiChat from "./components/BrowserWindow";
 import ResumeWindow from "./components/ResumeWindow";
+import SnakeGame from "./components/SnakeGame";
 import wallpaper3 from "@/public/wallpaper-white.jpg";
 import wallpaper2 from "@/public/wallpaper2.jpg";
 import wallpaper from "@/public/wallpaper3.jpg";
@@ -22,7 +23,7 @@ import ProfileCard from "./components/AboutMe";
 import ConnectWithMe from "./components/Social";
 import Projects from "./components/Project";
 export default function Home() {
-  const [openWindows, setOpenWindows] = useState<string[]>(["about"]); // Open "About Me" window by default
+  const [openWindows, setOpenWindows] = useState<string[]>([]); // No windows open by default
   const [isLoading, setIsLoading] = useState(true);
   const [wallpaper1, setWallpaper] = useState(wallpaper); // Default wallpaper
 
@@ -119,6 +120,24 @@ export default function Home() {
             )}
             {openWindows.includes("resume") && (
               <ResumeWindow onClose={() => toggleWindow("resume")} />
+            )}
+            {openWindows.includes("copilot") && (
+              <Window
+                id="copilot"
+                title="Copilot"
+                onClose={() => toggleWindow("copilot")}
+              >
+                <GeminiChat />
+              </Window>
+            )}
+            {openWindows.includes("snake") && (
+              <Window
+                id="snake"
+                title="Snake"
+                onClose={() => toggleWindow("snake")}
+              >
+                <SnakeGame />
+              </Window>
             )}
             <Dock toggleWindow={toggleWindow} />
             {/* Button to switch wallpaper */}

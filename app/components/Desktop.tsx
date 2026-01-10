@@ -1,4 +1,4 @@
-import { User , File, Mail, Briefcase } from 'lucide-react'
+import { User , File, Mail, Briefcase, MessageSquare, Gamepad } from 'lucide-react'
 
 interface DesktopProps {
   toggleWindow: (id: string) => void
@@ -25,6 +25,17 @@ export default function Desktop({ toggleWindow }: DesktopProps) {
       id: 'resume',
       label: 'Resume',
       icon: <File className="w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-white" />
+    },
+    {
+      id: 'copilot',
+      label: 'Copilot',
+      icon: <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-white" />
+    }
+    ,
+    {
+      id: 'snake',
+      label: 'Snake',
+      icon: <Gamepad className="w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-white" />
     }
   ]
 
