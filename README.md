@@ -11,7 +11,6 @@ A modern, sleek portfolio website built with Next.js, featuring a macOS-inspired
   - Dock-like navigation
   - Native-feeling animations and transitions
   - Music Player
-  - Chat Bot 
 
 - **Technical Highlights**
   - Built with Next.js for optimal performance
