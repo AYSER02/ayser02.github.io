@@ -11,32 +11,17 @@ const ProfileCard = () => {
         </div>
   
         <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-          Completed My B.E. in Computer Engineering from MH Saboo Siddik College of Engineering. with a CGPA of 7.19.
-          Passionate about software development with experience in building
-          scalable web applications, and Data Analysis. 
-          Currently Looking for opportunities in Software Development and Data Science, to furthur enhance my skills and knowledge.
+         Computer Engineering graduate with a strong foundation in artificial intelligence, machine learning, and software engineering.
+         Hands-on experience in AI model training, evaluation, and quality analysis, along with building full-stack applications and data-driven automation tools.
+         Proficient in Python, JavaScript, and TypeScript, with experience using modern frameworks, databases, and cloud-based tools.
+         Actively seeking an AI Engineer role to apply machine learning, data analysis, and scalable system design to real-world problems.
         </p>
-  
-        <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
-          <h3 className="font-bold mb-2">Achievements</h3>
-          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200">
-            <li>
-              Completed Appreticeship at Fugro.
-            </li>
-          </ul>
-        </div>
+
   
         <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
           <h3 className="font-bold mb-2">Current Roles</h3>
           <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200">
-            <li>Outlier AI | Freelancer</li>
-          </ul>
-        </div>
-  
-        <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
-          <h3 className="font-bold mb-2">Previous Roles</h3>
-          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200">
-            <li>Apprentice At Fugro Survey India</li>
+            <li>Outlier AI | Freelancer -- Nielsen | Data Co-Ordinator</li>
           </ul>
         </div>
   
@@ -59,10 +44,8 @@ const ProfileCard = () => {
               <ul className="list-none list-inside ml-4">
                 <li>→ Node.js</li>
                 <li>→ Express.js</li>
-                <li>→ HonoJS</li>
                 <li>→ React.js</li>
                 <li>→ Next.js</li>
-                <li>→ Recoil</li>
                 <li>→ WebSockets</li>
                 <li>→ TailwindCSS</li>
               </ul>
@@ -71,7 +54,6 @@ const ProfileCard = () => {
               <strong>Tools:</strong>
               <ul className="list-none list-inside ml-4">
                 <li>→ Git/GitHub</li>
-                <li>→ Figma</li>
                 <li>→ Google Colab</li>
                 <li>→ Docker</li>
                 <li>→ AWS</li>
