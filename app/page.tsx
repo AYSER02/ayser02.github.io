@@ -87,6 +87,7 @@ export default function Home() {
                 id="about"
                 title="About Me"
                 onClose={() => toggleWindow("about")}
+                initialMaximized={true}
               >
                 <ProfileCard />
               </Window>
@@ -96,6 +97,7 @@ export default function Home() {
                 id="projects"
                 title="My Projects"
                 onClose={() => toggleWindow("projects")}
+                initialMaximized={true}
               >
                 <Projects />
               </Window>
@@ -105,6 +107,7 @@ export default function Home() {
                 id="contact"
                 title="Contact Me"
                 onClose={() => toggleWindow("contact")}
+                initialMaximized={true}
               >
                 <ConnectWithMe />
               </Window>
@@ -114,6 +117,7 @@ export default function Home() {
                 id="browser"
                 title="Contact Me"
                 onClose={() => toggleWindow("browser")}
+                initialMaximized={true}
               >
                 <GeminiChat />
               </Window>
@@ -126,6 +130,7 @@ export default function Home() {
                 id="copilot"
                 title="Copilot"
                 onClose={() => toggleWindow("copilot")}
+                initialMaximized={true}
               >
                 <GeminiChat />
               </Window>
@@ -135,6 +140,7 @@ export default function Home() {
                 id="snake"
                 title="Snake"
                 onClose={() => toggleWindow("snake")}
+                initialMaximized={true}
               >
                 <SnakeGame />
               </Window>

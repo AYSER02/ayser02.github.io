@@ -50,10 +50,10 @@ const ProfileCard = () => {
         </div>
   
         <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-         Computer Engineering graduate with a strong foundation in artificial intelligence, machine learning, and software engineering.
-         Hands-on experience in AI model training, evaluation, and quality analysis, along with building full-stack applications and data-driven automation tools.
-         Proficient in Python, JavaScript, and TypeScript, with experience using modern frameworks, databases, and cloud-based tools.
-         Actively seeking an AI Engineer role to apply machine learning, data analysis, and scalable system design to real-world problems.
+         Driven data professional blending software engineering expertise with advanced data orchestration skills.
+          Currently mastering Apache Hive, Airflow, and CI/CD automation to architect impactful and scalable data
+          pipelines.
+
         </p>
 
   
@@ -76,6 +76,10 @@ const ProfileCard = () => {
                 <li>→ TypeScript</li>
                 <li>→ Java</li>
                 <li>→ Python</li>
+                <li>→ SQL</li>
+                <li>→ HTML/CSS</li>
+                <li>→ Scala</li>
+                <li>→ Bash/Shell Scripting</li>
               </ul>
             </li>
             <li>
@@ -87,6 +91,12 @@ const ProfileCard = () => {
                 <li>→ Next.js</li>
                 <li>→ WebSockets</li>
                 <li>→ TailwindCSS</li>
+                <li>→ Snowflake</li>
+                <li>→ Apache Airflow</li>
+                <li>→ Amazon Redshift</li>
+                <li>→ Google BigQuery</li>
+                <li>→ Cassandra</li>
+                <li>→ Redis</li>
               </ul>
             </li>
             <li>

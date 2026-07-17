@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
-  Github,
-  Linkedin,
+  GitBranch,
+  Link,
   Mail,
   Phone,
   ArrowRight,
@@ -9,13 +9,13 @@ import {
 
 const socialLinks = [
   {
-    icon: <Github className="w-6 h-6" />,
+    icon: <GitBranch className="w-6 h-6" />,
     label: "GitHub",
     url: "https://github.com/AYSER02",
     color: "hover:text-purple-600 dark:hover:text-purple-400",
   },
   {
-    icon: <Linkedin className="w-6 h-6" />,
+    icon: <Link className="w-6 h-6" />,
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/ayser-ahmed-bijapur",
     color: "hover:text-blue-600 dark:hover:text-purple-400",

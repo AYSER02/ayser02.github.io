@@ -6,14 +6,21 @@ interface WindowProps {
   title: string;
   children: React.ReactNode;
   onClose: () => void;
+  initialMaximized?: boolean;
 }
 
-export default function Window({ id, title, children, onClose }: WindowProps) {
+export default function Window({
+  id,
+  title,
+  children,
+  onClose,
+  initialMaximized = true,
+}: WindowProps) {
   const [position, setPosition] = useState({ x: 50, y: 50 });
   const [size, setSize] = useState({ width: 800, height: 600 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
-  const [isMaximized, setIsMaximized] = useState(false);
+  const [isMaximized, setIsMaximized] = useState(initialMaximized);
   const [isMinimized, setIsMinimized] = useState(false);
   const [isResizing, setIsResizing] = useState(false);
   const [resizeOffset, setResizeOffset] = useState({ x: 0, y: 0 });
@@ -38,6 +45,14 @@ export default function Window({ id, title, children, onClose }: WindowProps) {
   useEffect(() => {
     setSize(defaultSize);
     setPosition(defaultPosition);
+
+    if (initialMaximized) {
+      setPosition({ x: 5, y: 40 });
+      setSize({
+        width: window.innerWidth - 10,
+        height: window.innerHeight - 50,
+      });
+    }
   }, []);
 
   useEffect(() => {
