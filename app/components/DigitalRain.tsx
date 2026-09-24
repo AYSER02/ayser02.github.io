@@ -15,7 +15,7 @@ export const DigitalRain: React.FC = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const columns = canvas.width / 20;
+    const columns = Math.floor(canvas.width / 20);
     const drops: number[] = [];
 
     for (let i = 0; i < columns; i++) {
@@ -31,16 +31,15 @@ export const DigitalRain: React.FC = () => {
 
       for (let i = 0; i < drops.length; i++) {
         const text = String.fromCharCode(Math.random() * 128);
-        ctx.fillText(text, drops[i] * 20, i * 20);
+        ctx.fillText(text, i * 20, drops[i] * 20);
 
-        if (drops[i] * 20 > canvas.width && Math.random() > 0.975) {
+        if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
           drops[i] = 0;
-        }
-
+        } 
+        
         drops[i]++;
-      }
+      } 
     };
-
     const interval = setInterval(draw, 33);
 
     return () => clearInterval(interval);
