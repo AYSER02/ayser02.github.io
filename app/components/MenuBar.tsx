@@ -162,7 +162,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ switchWallpaper }) => {
         <div className="flex items-center space-x-2">
           <span className="hidden sm:block text-sm">Ayser Ahmed Bijapur</span>
           <LucideCopyright className="sm:h-4 h-5 sm:w-4 w-5 font-thin hidden sm:block"/>
-          <span className="hidden sm:block text-sm ">2025</span>
+          <span className="hidden sm:block text-sm ">2026</span>
         </div>
         
         <div className="flex items-center space-x-4 sm:space-x-2">
@@ -252,7 +252,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ switchWallpaper }) => {
             <span className="font-semibold">Ayser Ahmed Bijapur</span>
             <div className="flex items-center space-x-2">
               <LucideCopyright className="h-4 w-4" />
-              <span>2025</span>
+              <span>2026</span>
             </div>
             <button onClick={handleDrawerClose} aria-label="Close Drawer" className="p-1 rounded-full">
               <X className="w-6 h-6" />
