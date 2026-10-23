@@ -26,12 +26,6 @@ const socialLinks = [
     url: "mailto:ayser.b@gmail.com",
     color: "hover:text-red-500 dark:hover:text-purple-400",
   },
-  {
-    icon: <Phone className="w-6 h-6" />,
-    label: "Phone",
-    url: "tel:+919004063414",
-    color: "hover:text-green-500 dark:hover:text-purple-400",
-  },
 ];
 
 const ConnectWithMe = () => {
